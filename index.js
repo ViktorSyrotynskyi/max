@@ -24,6 +24,9 @@ app.listen(3000, () => console.log('Server started...'));
 
 const transporter = nodemailer.createTransport({
    service: 'gmail',
+    host: 'smtp.gmail.com',
+    port: 587,
+    secure: false,
    auth: {
        user: 'temychun@gmail.com',
        pass: 'tamplier2287'
@@ -45,4 +48,5 @@ app.post('/submit', (req, res) => {
         console.log("Message sent: " + response.message);
     };
 //        transporter.close();
-})
+});
+});
