@@ -1,0 +1,85 @@
+@media (min-width: 992px) {
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+	}
+}
+
+h2 {
+	text-transform: uppercase;
+}
+
+.h-300 {
+	height: 250px;
+}
+
+.h-500 {
+	height: 700px;
+}
+
+.m-h2 {
+	margin-top: 3rem;
+	margin-bottom: 1rem;
+}
+
+.qube {
+	width: 100px;
+	height: 200px;
+}
+	
+.opacity-4 {
+	filter: opacity(0.4);
+}
+
+.view {
+	cursor: pointer;
+}
+
+.partners img {
+	filter: grayscale(1);
+	opacity: 0.3;
+}
+
+.partners img:hover {
+	filter: grayscale(0);
+	opacity: 1;
+	transition: 0.8s;
+}
+
+.mail-logo {
+	margin-left: 3rem;
+	width: 170px;
+}
+
+.btn-rounded {
+	border-radius: 5rem;
+}
+
+.carousel-caption {
+	bottom: 10%;
+}
+
+.caption-background {
+	background-color: rgba(0,0,0,0.4);
+	left: 0;
+	right: 0;
+}
+
+.rgba-black-strong, .rgba-black-strong:after {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.user-select {
+	background: none;
+	border: none;
+	border-bottom: 1px solid #ced4da;
+    border-radius: 0;
+    padding: .6rem 0 .4rem 0;
+    margin: 0 0 .5rem 0;
+}
+
+*/*
+.card-background {
+	background-image: url(https://mdbootstrap.com/img/Photos/Others/img%20%2832%29.jpg);
+	background-size: cover;
+}
