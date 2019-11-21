@@ -22,6 +22,14 @@ app.get('/', (req, res) => {
     res.sendFile('index.html', { root: __dirname });
 });
 
+app.get('/index.html', (req, res) => {
+    res.sendFile('index.html', { root: __dirname });
+});
+
+app.get('/kitchen', (req, res) => {
+    res.sendFile('kitchen.html', { root: __dirname });
+});
+
 app.listen(3000, () => console.log('Server started...'));
 
 const transporter = nodemailer.createTransport({
@@ -40,7 +48,7 @@ app.post('/submit', (req, res) => {
       from: req.body.email,
       to: 'temychun@gmail.com',
       subject: 'Send Node.js',
-      text: `Name: ${req.body.name} Email: ${req.body.email} Adress: ${req.body.adress} Phone: ${req.body.phone}` 
+      text: `Name: ${req.body.name} Email: ${req.body.email} Adress: ${req.body.adress} Phone: ${req.body.phone} Select: ${req.body.my}` 
   } ;
 
     transporter.sendMail(mailOptions, function(error, response){
@@ -49,6 +57,6 @@ app.post('/submit', (req, res) => {
     }else{
         console.log("Message sent: " + response.message);
     };
-//        transporter.close();
+    transporter.close();
 });
 });

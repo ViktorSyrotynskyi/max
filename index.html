@@ -8,11 +8,11 @@
 	<!-- MDB icon -->
 	<link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
 	<!-- Font Awesome -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-<!-- Bootstrap core CSS -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-<!-- Material Design Bootstrap -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
 	<!-- Your custom styles (optional) -->
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -40,7 +40,7 @@
 		<!-- Links -->
 		<ul class="navbar-nav m-auto">
 			<li class="nav-item">
-				<a class="nav-link" href="#">Кухні</a>
+				<a class="nav-link" href="kitchen">Кухні</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="#">Шафи-купе</a>
@@ -219,7 +219,7 @@
     <div class="modal-content">
       <div class="modal-header text-center">
         <h4 class="modal-title w-100 font-weight-bold">Замовити заміри</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="closeForm">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -250,14 +250,14 @@
         </div>
 
         <div class="md-form mb-4">
-           <select class="custom-select user-select">
+           <select class="custom-select user-select" name="my">
   <option selected>Що будемо замовляти</option>
-  <option value="1">Кухня</option>
-  <option value="2">Шафа-купе</option>
-  <option value="3">Дитяча</option>
-  <option value="4">Спальня</option>
-  <option value="5">Офіс</option>
-  <option value="6">Інше</option>
+  <option value="Кухня">Кухня</option>
+  <option value="Шафа-купе">Шафа-купе</option>
+  <option value="Дитяча">Дитяча</option>
+  <option value="Спальня">Спальня</option>
+  <option value="Офіс">Офіс</option>
+  <option value="Інше">Інше</option>
 </select>
         </div>
 
@@ -287,7 +287,7 @@
 			<!-- Grid column -->
 			<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
 				<img src="img/svg/footer-logo.svg" alt="footer-logo">
-				<a href="" data-toggle="modal" data-target="#modalSubscriptionForm" class="btn btn-success btn-rounded mt-4">Замовити</a>
+				<a href="" data-toggle="modal" data-target="#modalSubscriptionForm" class="btn btn-success btn-rounded mt-4" >Замовити</a>
 			</div>
 			<!-- Grid column -->
 
@@ -400,16 +400,15 @@
 			<!-- End your project here-->
 
 			<!-- JQuery -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <!-- Bootstrap tooltips -->
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+            <!-- Bootstrap core JavaScript -->
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <!-- MDB core JavaScript -->
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
 			<!-- Your custom scripts (optional) -->
-			
-			<script type="text/javascript" src="js/main.js"></script>
+            <script type="text/javascript" src="js/main.js"></script>
 			
 
 		</body>
