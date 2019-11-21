@@ -26,8 +26,8 @@ app.get('/index.html', (req, res) => {
     res.sendFile('index.html', { root: __dirname });
 });
 
-app.get('/kitchen', (req, res) => {
-    res.sendFile('kitchen.html', { root: __dirname });
+app.get('/ourproject', (req, res) => {
+    res.sendFile('ourproject.html', { root: __dirname });
 });
 
 app.listen(3000, () => console.log('Server started...'));
