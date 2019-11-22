@@ -30,6 +30,30 @@ app.get('/ourproject', (req, res) => {
     res.sendFile('ourproject.html', { root: __dirname });
 });
 
+app.get('/kitchen', (req, res) => {
+    res.sendFile('kitchen.html', { root: __dirname });
+});
+
+app.get('/wardrobe', (req, res) => {
+    res.sendFile('wardrobe.html', { root: __dirname });
+});
+
+app.get('/bedroom', (req, res) => {
+    res.sendFile('bedroom.html', { root: __dirname });
+});
+
+app.get('/office', (req, res) => {
+    res.sendFile('office.html', { root: __dirname });
+});
+
+app.get('/children', (req, res) => {
+    res.sendFile('children.html', { root: __dirname });
+});
+
+app.get('/contacts', (req, res) => {
+    res.sendFile('contacts.html', { root: __dirname });
+});
+
 app.listen(3000, () => console.log('Server started...'));
 
 const transporter = nodemailer.createTransport({
