@@ -62,15 +62,15 @@ const transporter = nodemailer.createTransport({
     port: 587,
     secure: false,
    auth: {
-       user: 'temychun@gmail.com',
-       pass: 'tamplier2287'
+       user: 'myemale',//https://nodemailer.com/usage/using-gmail/
+       pass: 'mepassvord'
    }
 });
 
 app.post('/submit', (req, res) => {
   var mailOptions = {
       from: req.body.email,
-      to: 'temychun@gmail.com',
+      to: 'myemale',
       subject: 'Send Node.js',
       text: `Name: ${req.body.name} Email: ${req.body.email} Adress: ${req.body.adress} Phone: ${req.body.phone} Select: ${req.body.my}` 
   } ;
@@ -78,9 +78,11 @@ app.post('/submit', (req, res) => {
     transporter.sendMail(mailOptions, function(error, response){
     if(error){
         console.log(error);
+        
     }else{
         console.log("Message sent: " + response.message);
     };
     transporter.close();
+     res.sendFile('index.html', { root: __dirname });
 });
 });
